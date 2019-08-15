@@ -1,0 +1,17 @@
+{
+  "name": "gulpify-cli",
+  "version": "0.0.0",
+  "description": "Global CLI installer for \"gulpify\".",
+  "main": "index.js",
+  "keywords": [
+    "gulp",
+    "cli",
+    "plugins",
+    "bundler",
+    "pipeline"
+  ],
+  "author": [
+    "Michael Arakilian"
+  ],
+  "license": "MIT"
+}
