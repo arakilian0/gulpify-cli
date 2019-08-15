@@ -1,0 +1,11 @@
+{
+	"commands": [
+		"init",
+		"update"
+	],
+	"options": [
+		"help",
+		"version"
+	],
+	"repo": "https://github.com/arakilian0/gulp-pack"
+}

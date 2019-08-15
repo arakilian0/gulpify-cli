@@ -1,17 +1,31 @@
 {
-  "name": "gulpify-cli",
-  "version": "0.0.0",
-  "description": "Global CLI installer for \"gulpify\".",
-  "main": "index.js",
-  "keywords": [
-    "gulp",
-    "cli",
-    "plugins",
-    "bundler",
-    "pipeline"
-  ],
-  "author": [
-    "Michael Arakilian"
-  ],
-  "license": "MIT"
+ "name": "gulpify-cli",
+ "version": "0.0.1",
+ "description": "Global CLI installer for \"gulpify\"",
+ "main": "./bin/cli.js",
+ "keywords": [
+   "gulp",
+   "cli",
+   "plugins",
+   "bundler",
+   "pipeline"
+ ],
+ "license": "MIT",
+ "repository": {
+   "type": "git",
+   "url": "https://github.com/arakilian0/gulpify-cli.git"
+ },
+ "homepage": "https://github.com/arakilian0/gulpify-cli#readme",
+ "bugs": {
+   "url": "https://github.com/arakilian0/gulpify-cli/issues",
+   "email": "michael@arakilian0.com"
+ },
+ "preferGlobal": true,
+ "bin": {
+   "gulpify": "./bin/cli.js"
+ },
+ "devDependencies": {
+   "chalk": "^2.4.2",
+   "yargs": "^13.3.0"
+ }
 }
