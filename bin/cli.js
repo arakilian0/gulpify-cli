@@ -1,21 +1,19 @@
 #!/usr/bin/env node
 
-const { print,commands,options,tasks,config } = require('./../lib/imports');
+const { commands,options,tasks,config,print } = require('./../lib/imports');
 let commandFound;
 
-if(!commands[0]) {
-	tasks.default(options);
-}
+if(!commands[0]) { tasks.default(options) }
 else {
 	commands.forEach((cmd) => {
 		config.commands.forEach((e) => {
-			if(cmd === e) {
-				commandFound = true;
-				require('./../cmd/'+cmd+'/'+cmd)(options);
-			};
+			e.alias.forEach((alias) => {
+				if(cmd === e.name || cmd === alias) {
+					commandFound = true;
+					require('./../cmd/' + e.name + '/' + e.name)(options);
+				};
+			});
 		});
 	});
-	if(!commandFound) {
-		tasks.default(options)
-	};
+	if(!commandFound) { tasks.default(options) };
 };

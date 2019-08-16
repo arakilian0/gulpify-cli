@@ -1,11 +1,9 @@
 {
 	"commands": [
-		"init",
-		"update"
+		{ "name": "init", "alias": ["i"] }
 	],
 	"options": [
-		"help",
-		"version"
-	],
-	"repo": "https://github.com/arakilian0/gulp-pack"
+		{ "name": "help", "alias": ["h","H"] },
+		{ "name": "version", "alias": ["v","V"] }
+	]
 }
