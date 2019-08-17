@@ -1,5 +1,0 @@
-curl -L https://github.com/arakilian0/gulp-pack/tarball/master | tar xz
-
-mv arakilian0-gulp-pack-* [option]
-
-cd [option] && ./run/install.js

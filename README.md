@@ -29,6 +29,9 @@ npm install
 npm link
 ```
 - **using curl**
-```bash
-curl -L https://github.com/arakilian0/repo.git
 ```
+coming soon
+```
+
+## More
+The documentation for this project can found [here](https://arakilian0.github.io/gulpify-cli/). It is still in the works. 
