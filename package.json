@@ -1,6 +1,6 @@
 {
   "name": "gulpify-cli",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "Command Line Interface for \"gulpify\"",
   "main": "./bin/cli.js",
   "keywords": [
