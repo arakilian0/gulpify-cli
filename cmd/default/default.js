@@ -1,18 +1,11 @@
 const print = console.log,
 			chalk = require('chalk'),
 			yargs = require('yargs').argv,
-			config = require('./../../config.json');
-let optionFound;
+			config = require('./../../config.json'),
+			help = require('./../../msg/__msg__');
 
-module.exports = function(options) {
-	function help() {
-		print(chalk.blue('Usage:') + ' gulpify ' + chalk.bold('<command> [options]'));
-		print('');
-		print('To see help text, you can run:');
-		print('');
-		print('  gulpify --help');
-		print('  gulpify <command> --help');
-	};
+module.exports = function(commands,options) {
+	let optionFound;
 
 	options.forEach((option) => {
 		config.options.forEach((configOption) => {
@@ -24,6 +17,6 @@ module.exports = function(options) {
 		});
 	});
 
-	if(!optionFound) { return help() }
-	else { optionFound() };
+	if(!optionFound) { help.generic() }
+	else { optionFound(commands,options) };
 };

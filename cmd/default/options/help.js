@@ -1,12 +1,3 @@
-const print = console.log,
-			chalk = require('chalk');
+const help = require('./../../../msg/__msg__');
 
-module.exports = function() {
-	function help() {
-		print(chalk.blue('Usage:') + ' gulpify ' + chalk.bold('<command>') + ' [options]');
-		print('');
-		print('  ' + chalk.bold('init') + "      " + chalk.gray("Create a new instance of `gulpify`"));
-		print(chalk.gray('            Run `gulpify init --help` for options'));
-	};
-	return help();
-};
+module.exports = function(commands,options) { help.main() };

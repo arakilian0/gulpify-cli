@@ -1,7 +1,3 @@
-const package = require('./../../../package.json'),
-			print = console.log;
+const help = require('./../../../msg/__msg__');
 
-module.exports = function() {
-	let output = "CLI version: " + package.version;
-	return print(output);
-};
+module.exports = function(commands,options) { help.version() };

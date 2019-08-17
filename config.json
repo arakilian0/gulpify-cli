@@ -4,6 +4,8 @@
 	],
 	"options": [
 		{ "name": "help", "alias": ["h","H"] },
-		{ "name": "version", "alias": ["v","V"] }
+		{ "name": "version", "alias": ["v","V"] },
+		{ "name": "default", "alias": ["d","D"] },
+		{ "name": "config", "alias": ["c","C"] }
 	]
 }
