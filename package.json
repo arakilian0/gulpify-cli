@@ -24,7 +24,7 @@
   "bin": {
     "gulpify": "./bin/cli.js"
   },
-  "devDependencies": {
+  "dependencies": {
     "chalk": "^2.4.2",
     "yargs": "^13.3.0"
   }
