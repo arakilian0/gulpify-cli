@@ -18,7 +18,11 @@ npm install -g gulpify-cli
 ```
 **using git**
 ```bash
-git clone https://github.com/arakilian0/gulpify-cli.git && cd gulpify-cli && npm install && npm link
+cd /usr/local/bin
+git clone https://github.com/arakilian0/gulpify-cli.git
+cd gulpify-cli
+npm install
+npm link
 ```
 **using curl**
 ```
@@ -35,6 +39,7 @@ gulpify init
 ```bash
 gulpify update
 ```
+[*Find out more*](https://arakilian0.github.io/gulpify-cli/)
 
 ## License
 MIT License
