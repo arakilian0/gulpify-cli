@@ -25,8 +25,13 @@ npm install
 npm link
 ```
 **using curl**
-```
-coming soon
+```bash
+cd /usr/local/bin
+curl -L https://github.com/arakilian0/gulpify-cli/tarball/master | tar xz
+mv arakilian0-gulpify-cli-* gulpify-cli
+cd gulpify-cli
+npm install
+npm link
 ```
 
 ## Usage
