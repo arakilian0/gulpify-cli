@@ -2,7 +2,7 @@
 
 **Command Line Interface for [gulpify](https://github.com/arakilian0/gulpify) instantiation.**
 
-[![Build Status](https://travis-ci.com/arakilian0/gulpify-cli.svg?branch=master)](https://travis-ci.com/arakilian0/gulpify-cli) [![npm version](https://img.shields.io/npm/v/gulpify-cli.svg?style=flat)](https://www.npmjs.com/package/gulpify-cli) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/arakilian0/gulpify-cli/blob/master/LICENSE.md) [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://opensource.org/)
+[![Build Status](https://travis-ci.com/arakilian0/gulpify-cli.svg?branch=master)](https://travis-ci.com/arakilian0/gulpify-cli) [![npm version](https://img.shields.io/npm/v/gulpify-cli.svg?style=flat)](https://www.npmjs.com/package/gulpify-cli) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/arakilian0/gulpify-cli/blob/master/LICENSE.md)
 
 *Note: This project has only been tested on **MacOS**. If you would like to contribute to making it cross-platform, please read [CONTRIBUTING.md](https://github.com/arakilian0/gulpify-cli/blob/master/CONTRIBUTING.md)*
 
