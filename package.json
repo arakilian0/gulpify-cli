@@ -1,6 +1,6 @@
 {
   "name": "gulpify-cli",
-  "version": "1.0.12",
+  "version": "1.0.14",
   "description": "Command Line Interface for \"gulpify\"",
   "main": "./bin/cli.js",
   "keywords": [
@@ -15,7 +15,7 @@
     "type": "git",
     "url": "https://github.com/arakilian0/gulpify-cli.git"
   },
-  "homepage": "https://github.com/arakilian0/gulpify-cli#readme",
+  "homepage": "https://arakilian0.github.io/gulpify-cli/",
   "bugs": {
     "url": "https://github.com/arakilian0/gulpify-cli/issues",
     "email": "michael@arakilian0.com"
