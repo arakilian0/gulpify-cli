@@ -18,7 +18,6 @@ npm install -g gulpify-cli
 ```
 **using git**
 ```bash
-cd /usr/local/bin
 git clone https://github.com/arakilian0/gulpify-cli.git
 cd gulpify-cli
 npm install
@@ -26,7 +25,6 @@ npm link
 ```
 **using curl**
 ```bash
-cd /usr/local/bin
 curl -L https://github.com/arakilian0/gulpify-cli/tarball/master | tar xz
 mv arakilian0-gulpify-cli-* gulpify-cli
 cd gulpify-cli
