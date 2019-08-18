@@ -2,28 +2,36 @@
 
 **Command Line Interface for [gulpify](https://github.com/arakilian0/gulpify) instantiation.**
 
-[![Build Status](https://travis-ci.com/arakilian0/gulpify-cli.svg?branch=master)](https://travis-ci.com/arakilian0/gulpify-cli) [![npm version](https://img.shields.io/npm/v/gulpify-cli.svg?style=flat)](https://www.npmjs.com/package/gulpify-cli) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/arakilian0/gulpify-cli/blob/master/LICENSE.md)
+[![Build Status](https://travis-ci.com/arakilian0/gulpify-cli.svg?branch=master)](https://travis-ci.com/arakilian0/gulpify-cli) [![npm version](https://img.shields.io/npm/v/gulpify-cli.svg?style=flat)](https://www.npmjs.com/package/gulpify-cli) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/arakilian0/gulpify-cli/blob/master/LICENSE.md) [![Open Source Love png2](https://badges.frapsoft.com/os/v2/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
 *Note: This project has only been tested on **MacOS**. If you would like to contribute to making it cross-platform, please read [CONTRIBUTING.md](https://github.com/arakilian0/gulpify-cli/blob/master/CONTRIBUTING.md)*
 
+*Note: All code snippets in this README file should be executed one line at a time*
+
 ## Requirements
-- Node.js - [install for MacOS](https://google.com)
+- Node.js - [install for MacOS](https://treehouse.github.io/installation-guides/mac/node-mac.html)
+
+ *Quick Install Node.js*
+ ```bash
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+brew install node
+ ```
 
 ## Installation
-*Here are several ways you can install **gulpify-cli**:*
+Several ways to install **gulpify-cli**:
 
-**using npm (recommended)**
+***npm (recommended)***
 ```bash
 npm install -g gulpify-cli
 ```
-**using git**
+***git & npm***
 ```bash
 git clone https://github.com/arakilian0/gulpify-cli.git
 cd gulpify-cli
 npm install
 npm link
 ```
-**using curl**
+***curl & npm***
 ```bash
 curl -L https://github.com/arakilian0/gulpify-cli/tarball/master | tar xz
 mv arakilian0-gulpify-cli-* gulpify-cli
@@ -42,7 +50,7 @@ gulpify init
 ```bash
 gulpify update
 ```
-[*Find out more*](https://arakilian0.github.io/gulpify-cli/)
+[*Find out more*](https://arakilian0.github.io/gulpify-cli/docs)
 
 ## License
 MIT License

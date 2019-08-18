@@ -11,5 +11,5 @@ module.exports = function() {
 		print('  gulpify <command> --help');
 	};
 
-	return help();
+	help();
 };

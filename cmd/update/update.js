@@ -1,11 +1,13 @@
 const print = console.log,
-	  chalk = require('chalk'),
-	  yargs = require('yargs').argv,
-	  config = require('./../../config.json'),
-	  help = require('./../../msg/__msg__');
+	    chalk = require('chalk'),
+	    yargs = require('yargs').argv,
+	    config = require('./../../config.json'),
+	    help = require('./../../msg/__msg__'),
+			update = require('./../../lib/update');
 
 module.exports = function(commands,options,projectName) {
 	let optionFound;
+
 	options.forEach((option) => {
 		config.options.forEach((configOption) => {
 			configOption.alias.forEach((alias) => {
@@ -16,10 +18,7 @@ module.exports = function(commands,options,projectName) {
 		});
 	});
 
-	if(!optionFound) {
-		print(options);
-	}
-	else {
-		print(options);
-	};
+	if(options[0] && !optionFound) { return help.generic() };
+	if(options[0] && optionFound) { return optionFound(commands,options) };
+	if(!optionFound) { return update() };
 };

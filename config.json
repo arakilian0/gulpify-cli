@@ -1,7 +1,7 @@
 {
 	"commands": [
-		{ "name": "init", "alias": ["i"] },
-		{ "name": "update", "alias": ["u"] }
+		{ "name": "init", "alias": ["i","I"] },
+		{ "name": "update", "alias": ["u","U"] }
 	],
 	"options": [
 		{ "name": "help", "alias": ["h","H"] },
