@@ -1,6 +1,6 @@
 # gulpify-cli
 
-**Command Line Interface for [gulpify](https://github.com/arakilian0/gulpify) instantiation.**
+ :computer: **Command Line Interface for [gulpify](https://github.com/arakilian0/gulpify) instantiation.**
 
 [![Build Status](https://travis-ci.com/arakilian0/gulpify-cli.svg?branch=master)](https://travis-ci.com/arakilian0/gulpify-cli) [![npm version](https://img.shields.io/npm/v/gulpify-cli.svg?style=flat)](https://www.npmjs.com/package/gulpify-cli) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/arakilian0/gulpify-cli/blob/master/LICENSE.md)
 
