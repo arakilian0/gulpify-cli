@@ -19,7 +19,7 @@ $ brew install node
 ```
 $ npm i -g gulpify-cli
 ```
-![Usage Screenshot](https://raw.githubusercontent.com/arakilian0/images/master/screenshot.jpg "Succesfull install")
+![Usage Screenshot](https://raw.githubusercontent.com/arakilian0/images/master/gulpify-cli-installation.png "Succesfull install")
 
 ## Usage
 ```

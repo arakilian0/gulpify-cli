@@ -2,7 +2,7 @@
 **First of all I just want to thank you for taking the time to contribute to this project. Here lives the contribution guidelines. Let's build open source software together!**
 
 ## Create good Issues
-If you have ideas on new features, architecture, bug fixes, etc, please don't hesitate to create an issue so we can discuss further :smiley:
+If you have ideas for new features, architecture, bug fixes, etc, please don't hesitate to create an issue so we can discuss further :smiley:
 
 - Please make well thought out suggestions.
 
