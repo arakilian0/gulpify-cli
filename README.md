@@ -55,4 +55,4 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## More
-The documentation for this project can found [here](https://arakilian0.github.io/gulpify-cli/). It's' still in the works.
+The documentation for this project can be found [here](https://arakilian0.github.io/gulpify-cli/). It's still in the works.
