@@ -6,8 +6,6 @@
 
 *Note: This project has only been tested on **MacOS**. If you would like to contribute to making it cross-platform, please read [CONTRIBUTING.md](https://github.com/arakilian0/gulpify-cli/blob/master/CONTRIBUTING.md)*
 
-*Note: All code snippets in this README file should be executed one line at a time*
-
 ## Requirements
 - Node.js - [install for MacOS](https://treehouse.github.io/installation-guides/mac/node-mac.html)
 
