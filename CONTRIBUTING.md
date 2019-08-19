@@ -1,5 +1,5 @@
 # Contributing
-**First of all I just want to thank you for taking the time to contribute to this project. Here will live the contribution guidelines. Let's build open source software together!**
+**First of all I just want to thank you for taking the time to contribute to this project. Here lives the contribution guidelines. Let's build open source software together!**
 
 ## View current Issues
 Before working on new features, or creating issues for feature enhancements, there is some code that needs optimization. Checkout the current [issues](https://google.com) and try to come up with effecient solutions.
