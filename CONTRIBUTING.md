@@ -6,6 +6,8 @@ If you have ideas for new features, architecture, bug fixes, etc, please don't h
 
 - Please make well thought out suggestions.
 
+- Don't yuck someone's yum! If you don't like a suggestion, explain your reasoning. We're all here to learn :relaxed:
+
 - Be as descriptive as possilbe.
 
 - Apply proper labels.
