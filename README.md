@@ -41,7 +41,7 @@ $ npm link
 ```
 $ gulpify init my-project
 ```
-![Usage Screenshot](https://raw.githubusercontent.com/arakilian0/images/master/screenshot.png "Succesfull install")
+![Usage Screenshot](https://raw.githubusercontent.com/arakilian0/images/master/screenshot.jpg "Succesfull install")
 
 [*Find out more*](https://arakilian0.github.io/gulpify-cli/docs)
 
