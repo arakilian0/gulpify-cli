@@ -1,27 +1,56 @@
-const print = console.log,
-			chalk = require('chalk'),
-			yargs = require('yargs').argv,
-			config = require('./../../config.json'),
-			help = require('./../../msg/__msg__'),
-			init = require('./../../lib/init');
+let print = console.log,
+		chalk = require('chalk'),
+	  help = require('./../../msg/msg'),
+		child_process = require('child_process');
 
-module.exports = function(commands,options) {
-	let optionFound;
-	let projectName = commands[1];
+module.exports = function(argsArray) {
+	let projectName = argsArray[0];
+	if(argsArray[0]) {
+		switch(argsArray[0]) {
+			case "-h":
+		  case "--help":
+				help.init();
+		    break;
 
-	options.forEach((option) => {
-		config.options.forEach((configOption) => {
-			configOption.alias.forEach((alias) => {
-				if(option === configOption.name || option === alias) {
-					optionFound = require('./options/' + configOption.name);
-				};
-			});
-		});
-	});
+		  case "-v":
+		  case "--version":
+				help.version();
+		    break;
 
-	if(projectName) { init(commands,options,projectName) }
-	else {
-		if(optionFound) { optionFound(commands,options) }
-		else { help.generic() }
+		  default:
+				argsArray.shift();
+				if(argsArray[0]) {
+					switch(argsArray[0]) {
+						case "-h":
+						case "--help":
+							help.init();
+							break;
+
+						case "-v":
+						case "--version":
+							help.version();
+							break;
+
+						default:
+							help.init();
+					}
+				}
+				else {
+					print(chalk.bold('\n  Please wait a moment while all dependencies get installed.\n'));
+					child_process.exec('curl -L https://github.com/arakilian0/gulpify/tarball/master | tar xz && mv arakilian0-gulpify-* ' + projectName + ' && cd ' + projectName + ' && npm install && ./run/install.js', {},
+						function(error, stdout, stderr) {
+							process.stdout.write(stdout + '\n');
+							process.stderr.write(stderr + '\n');
+							if (error !== null) {
+								print(error);
+								return print(chalk.red.bold('\n  ERROR OCCURED WHILE INSTALLING gulpify\n') + chalk.gray.bold('  (read error logs above)\n'));
+							}
+							else {
+								return print(chalk.green.bold('  SUCCESFULLY INSTALLED gulpify ') + chalk.bold('('+projectName+')') + '\n' + chalk.gray.bold('  restart your terminal/IDE to propagate changes\n'));
+							};
+					});
+				}
+		}
 	}
+	else { return help.generic() };
 };

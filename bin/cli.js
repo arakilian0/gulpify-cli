@@ -1,19 +1,34 @@
 #!/usr/bin/env node
 
-const { commands,options,tasks,config,print } = require('./../lib/imports');
+let print = console.log,
+    argsArray = process.argv;argsArray.shift();argsArray.shift(),
+    help = require('./../msg/msg');
 
-let commandFound;
-if(!commands[0]) { tasks.default(commands,options) }
-else {
-	commands.forEach((cmd) => {
-		config.commands.forEach((e) => {
-			e.alias.forEach((alias) => {
-				if(cmd === e.name || cmd === alias) {
-					commandFound = true;
-					require('./../cmd/' + e.name + '/' + e.name)(commands,options);
-				};
-			});
-		});
-	});
-	if(!commandFound) { tasks.default(commands,options) };
-};
+switch(argsArray[0]) {
+	// commands
+	case "i":
+  case "init":
+		argsArray.shift();
+    require('./../cmd/init/init')(argsArray);
+    break;
+
+  case "u":
+  case "update":
+		argsArray.shift();
+		require('./../cmd/update/update')(argsArray);
+    break;
+
+	// options
+  case "-h":
+  case "--help":
+		help.main();
+    break;
+
+  case "-v":
+  case "--version":
+		help.version();
+    break;
+
+  default:
+    help.generic();
+}

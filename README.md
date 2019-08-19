@@ -12,44 +12,37 @@
 - Node.js - [install for MacOS](https://treehouse.github.io/installation-guides/mac/node-mac.html)
 
  *Quick Install Node.js*
- ```bash
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-brew install node
+ ```
+$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+$ brew install node
  ```
 
 ## Installation
-Several ways to install **gulpify-cli**:
-
-***npm (recommended)***
-```bash
-npm install -g gulpify-cli
 ```
-***git & npm***
-```bash
-git clone https://github.com/arakilian0/gulpify-cli.git
-cd gulpify-cli
-npm install
-npm link
+$ npm i -g gulpify-cli
+```
+<!-- ***git & npm***
+```
+$ git clone https://github.com/arakilian0/gulpify-cli.git
+$ cd gulpify-cli
+$ npm install
+$ npm link
 ```
 ***curl & npm***
-```bash
-curl -L https://github.com/arakilian0/gulpify-cli/tarball/master | tar xz
-mv arakilian0-gulpify-cli-* gulpify-cli
-cd gulpify-cli
-npm install
-npm link
 ```
+$ curl -L https://github.com/arakilian0/gulpify-cli/tarball/master | tar xz
+$ mv arakilian0-gulpify-cli-* gulpify-cli
+$ cd gulpify-cli
+$ npm install
+$ npm link
+``` -->
 
 ## Usage
-```bash
-gulpify
 ```
-```bash
-gulpify init
+$ gulpify init my-project
 ```
-```bash
-gulpify update
-```
+![Usage Screenshot](https://raw.githubusercontent.com/arakilian0/images/master/screenshot.png "Succesfull install")
+
 [*Find out more*](https://arakilian0.github.io/gulpify-cli/docs)
 
 ## License

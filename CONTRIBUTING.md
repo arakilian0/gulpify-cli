@@ -36,4 +36,4 @@ Apply proper labels when creating or editing issues.
 *Click on a label you seem interested in and start contributing!*
 
 ## Most of All
-Happy Coding :earth_americas: :heart:
+**Happy Coding** :earth_americas: :heart:
