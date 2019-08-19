@@ -21,27 +21,12 @@ $ brew install node
 ```
 $ npm i -g gulpify-cli
 ```
-<!-- ***git & npm***
-```
-$ git clone https://github.com/arakilian0/gulpify-cli.git
-$ cd gulpify-cli
-$ npm install
-$ npm link
-```
-***curl & npm***
-```
-$ curl -L https://github.com/arakilian0/gulpify-cli/tarball/master | tar xz
-$ mv arakilian0-gulpify-cli-* gulpify-cli
-$ cd gulpify-cli
-$ npm install
-$ npm link
-``` -->
+![Usage Screenshot](https://raw.githubusercontent.com/arakilian0/images/master/screenshot.jpg "Succesfull install")
 
 ## Usage
 ```
 $ gulpify init my-project
 ```
-![Usage Screenshot](https://raw.githubusercontent.com/arakilian0/images/master/screenshot.jpg "Succesfull install")
 
 [*Find out more*](https://arakilian0.github.io/gulpify-cli/docs)
 
