@@ -1,7 +1,9 @@
 let print = console.log,
 		chalk = require('chalk'),
 	  help = require('./../../msg/msg'),
-		child_process = require('child_process');
+		child_process = require('child_process'),
+		commandToCall = "curl -L https://github.com/arakilian0/gulpify/tarball/master | tar xz && mv arakilian0-gulpify-* ";
+		postCommandToCall = " && npm install && ./run/install.js && rm LICENSE.md CONTRIBUTING.md README.md && rm -rf docs run";
 
 module.exports = function(argsArray) {
 	let projectName = argsArray[0];
@@ -37,7 +39,7 @@ module.exports = function(argsArray) {
 				}
 				else {
 					print(chalk.bold('\n  Please wait a moment while all dependencies get installed.\n'));
-					child_process.exec('curl -L https://github.com/arakilian0/gulpify/tarball/master | tar xz && mv arakilian0-gulpify-* ' + projectName + ' && cd ' + projectName + ' && npm install && ./run/install.js', {},
+					child_process.exec(commandToCall + projectName + ' && cd ' + projectName + postCommandToCall, {},
 						function(error, stdout, stderr) {
 							process.stdout.write(stdout + '\n');
 							process.stderr.write(stderr + '\n');
