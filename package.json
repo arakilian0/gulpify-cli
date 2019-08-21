@@ -4,8 +4,8 @@
   "description": "Command Line Interface for \"Gulpify\"",
   "main": "./bin/cli.js",
   "keywords": [
-		"gulp",
-		"cli",
+    "gulp",
+    "cli",
     "tool",
     "pipeline",
     "installer"
@@ -24,6 +24,7 @@
     "gulpify": "./bin/cli.js"
   },
   "dependencies": {
-    "chalk": "^2.4.2"
+    "chalk": "^2.4.2",
+    "progress": "^2.0.3"
   }
 }

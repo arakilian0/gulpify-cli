@@ -18,6 +18,12 @@ switch(argsArray[0]) {
 		require('./../cmd/update/update')(argsArray);
     break;
 
+  // case "test":
+  // case "test":
+	// 	argsArray.shift();
+	// 	require('./../cmd/test/test')(argsArray);
+  //   break;
+
 	// options
   case "-h":
   case "--help":
