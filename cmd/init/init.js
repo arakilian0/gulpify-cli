@@ -39,7 +39,7 @@ module.exports = function(argsArray) {
 					}
 				}
 				else {
-					print(chalk.bold('\n  Please wait a moment while gulpify gets installed.\n'));
+					print(chalk.bold('\n  Please wait a moment while gulpify downloads.\n'));
 					child_process.exec(commandToCall + projectName, {},
 						function(error, stdout, stderr) {
 							process.stdout.write(stdout + '\n');
@@ -49,7 +49,7 @@ module.exports = function(argsArray) {
 								return print(chalk.red.bold('\n  ERROR OCCURED WHILE INSTALLING gulpify\n') + chalk.gray.bold('  (read error logs above)\n'));
 							}
 							else {
-								print(chalk.bold('\n  Please wait a moment while all devDependencies get installed.\n'));
+								print(chalk.bold('\n  Please wait a moment while devDependencies get installed.\n'));
 								child_process.exec('cd ' + projectName + postCommandToCall, {},
 									function(error, stdout, stderr) {
 										process.stdout.write(stdout + '\n');
