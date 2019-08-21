@@ -1,5 +1,5 @@
-const ProgressBar = require('progress');
-const chalk = require('chalk');
+let ProgressBar = require('progress'),
+    chalk = require('chalk');
 
 module.exports = function(argsArray) {
 	var bar = new ProgressBar('[:bar] :percent/:total :etas', { total: 100, width: 40 });
