@@ -3,7 +3,7 @@ let print = console.log,
 	  help = require('./../../msg/msg'),
 		child_process = require('child_process'),
 		commandToCall = "curl -L https://github.com/arakilian0/gulpify/tarball/master | tar xz && mv arakilian0-gulpify-* ",
-		postCommandToCall = " && npm install";
+		postCommandToCall = " && npm install",
 		customInstallerCall = " && ./run/install.js && rm LICENSE.md CONTRIBUTING.md README.md && rm -rf docs run";
 
 module.exports = function(argsArray) {
