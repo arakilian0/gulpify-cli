@@ -39,7 +39,7 @@ module.exports = function(argsArray) {
 					}
 				}
 				else {
-					print(chalk.bold('\n  Please wait a moment while gulpify downloads.\n'));
+					print(chalk.bold.green('\n  Please wait a moment while gulpify downloads.\n'));
 					child_process.exec(commandToCall + projectName, {},
 						function(error, stdout, stderr) {
 							process.stdout.write(stdout + '\n');
@@ -49,7 +49,7 @@ module.exports = function(argsArray) {
 								return print(chalk.red.bold('\n  ERROR OCCURED WHILE INSTALLING gulpify\n') + chalk.gray.bold('  (read error logs above)\n'));
 							}
 							else {
-								print(chalk.bold('\n  Please wait a moment while devDependencies get installed.\n'));
+								print(chalk.bold.green('\n  installing devDependencies\n'));
 								child_process.exec('cd ' + projectName + postCommandToCall, {},
 									function(error, stdout, stderr) {
 										process.stdout.write(stdout + '\n');
@@ -59,7 +59,6 @@ module.exports = function(argsArray) {
 											return print(chalk.red.bold('\n  ERROR OCCURED WHILE INSTALLING gulpify\n') + chalk.gray.bold('  (read error logs above)\n'));
 										}
 										else {
-											print(chalk.bold('\n  Please wait a moment while global dependencies get installed.\n'));
 											child_process.exec('cd ' + projectName + customInstallerCall, {},
 												function(error, stdout, stderr) {
 													process.stdout.write(stdout + '\n');
@@ -69,7 +68,7 @@ module.exports = function(argsArray) {
 														return print(chalk.red.bold('\n  ERROR OCCURED WHILE INSTALLING gulpify\n') + chalk.gray.bold('  (read error logs above)\n'));
 													}
 													else {
-														return print(chalk.green.bold('  SUCCESFULLY INSTALLED gulpify ') + chalk.bold('('+projectName+')') + '\n' + chalk.gray.bold('  restart your terminal/IDE to propagate changes\n'));
+														return print(chalk.green.bold('  SUCCESFULLY INSTALLED gulpify ') + chalk.bold('('+projectName+')') + '\n' + chalk.gray.bold(`  run 'cd ${projectName} && gulp'\n`));
 													};
 											});
 										};

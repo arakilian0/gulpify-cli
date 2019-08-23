@@ -19,7 +19,7 @@ $ npm -v
 
 ## Installation
 ```
-$ npm i -g gulpify-cli
+$ npm i -g gulp gulp-cli gulpify-cli
 ```
 ![Usage Screenshot](https://raw.githubusercontent.com/arakilian0/images/master/gulpify-cli-installation.png "Succesfull install")
 
