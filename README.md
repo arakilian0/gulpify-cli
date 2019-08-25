@@ -2,12 +2,13 @@
 
  :computer: **Command Line Interface for [gulpify](https://github.com/arakilian0/gulpify) instantiation.**
 
-[![Build Status](https://travis-ci.com/arakilian0/gulpify-cli.svg?branch=master)](https://travis-ci.com/arakilian0/gulpify-cli) [![npm version](https://img.shields.io/npm/v/gulpify-cli.svg?style=flat)](https://www.npmjs.com/package/gulpify-cli) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/arakilian0/gulpify-cli/blob/master/LICENSE.md)
+[![Build Status](https://travis-ci.com/arakilian0/gulpify-cli.svg?branch=master)](https://travis-ci.com/arakilian0/gulpify-cli) [![npm version](https://img.shields.io/npm/v/gulpify-cli.svg?style=flat)](https://www.npmjs.com/package/gulpify-cli) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/arakilian0/gulpify-cli/blob/master/LICENSE.md) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)](https://github.com/arakilian0/gulpify-cli/blob/master/CONTRIBUTING.md)
 
 *Note: This project has only been tested on **MacOS**. If you would like to contribute to making it cross-platform, please read [CONTRIBUTING.md](https://github.com/arakilian0/gulpify-cli/blob/master/CONTRIBUTING.md)*
 
 ## Requirements
 - Node.js - [install for MacOS](https://treehouse.github.io/installation-guides/mac/node-mac.html)
+
 
  *Quick Install Node.js*
  ```
@@ -19,7 +20,7 @@ $ npm -v
 
 ## Installation
 ```
-$ npm i -g gulp gulp-cli gulpify-cli
+$ npm i -g gulp-cli gulpify-cli
 ```
 ![Usage Screenshot](https://raw.githubusercontent.com/arakilian0/images/master/gulpify-cli-installation.png "Succesfull install")
 
