@@ -15,6 +15,11 @@ switch(argsArray[0]) {
 		argsArray.shift();
 		require('./../cmd/update/update')(argsArray);
     break;
+  case "t":
+  case "test":
+		argsArray.shift();
+		require('./../cmd/test/test')(argsArray);
+    break;
   case "-h":
   case "--help":
 		help.main();
