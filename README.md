@@ -30,7 +30,7 @@ $ gulpify init my-project
 ```
 ![Usage Screenshot](https://raw.githubusercontent.com/arakilian0/images/master/gulpify-cli-usage-v2.png "Succesfull install")
 
-[*Find out more*](https://arakilian0.github.io/gulpify-cli/docs)
+[*Find out more*](https://github.com/arakilian0/gulpify#readme)
 
 ## License
 MIT License
@@ -56,4 +56,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 ## More
-The documentation for this project can be found [here](https://arakilian0.github.io/gulpify-cli/). It's still in the works.
+
+#### Resources
+
+- Gulp - [read the docs](https://gulpjs.com/docs/en/api/concepts)
+- Pug - [read the docs](https://pugjs.org/api/getting-started.html)
+- YAML - [read the docs](https://learnxinyminutes.com/docs/yaml/)
+- BrowserSync - [read the docs](https://www.browsersync.io/docs/options)
